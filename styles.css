@@ -1,0 +1,100 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+    background-color: #fefae0;
+    background-color: #0096c7;
+    background-image: url(asfalt-light.png);
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: center;
+    font-size: x-small;
+    margin-top: 0px;
+    margin-bottom: 1.3rem;
+}
+
+.text {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #dda15e;
+    border: 3px solid #606c38;
+    border: 3px solid #48cae4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#button-container {
+    transform: translate(36vw, 78vh);
+}
+
+.button {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dda15e;
+    background-color: #ade8f4;
+    transition: all 0.3s ease-in-out;
+    /* color: whitesmoke; */
+}
+
+.button:hover {
+    background-color: #48cae4;
+    box-shadow: -4px 4px 10px 0px #ade8f4;
+    transition: 0.3s ease-in-out;
+}
+
+.button:first-child {
+    display: block;
+}
+
+/* CSS */
+.button {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.button:nth-child(15) {
+    transform: rotate(-5deg);
+}
