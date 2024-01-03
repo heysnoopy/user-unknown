@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
 html {
     padding: 0;
     margin: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: Gloria Hallelujah; */
 }
 
 body {
@@ -15,7 +20,7 @@ h2 {
     margin-bottom: 0px;
 }
 
-p {
+.surprise {
     text-align: center;
     font-size: x-small;
     margin-top: 0px;
@@ -76,7 +81,9 @@ p {
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
-  font-size: 16px;
+  font-size: 24px;
+  font-family: Patrick Hand;
+  /* font-weight: bolder; */
   border: 0;
   user-select: none;
   -webkit-user-select: none;
@@ -97,4 +104,21 @@ p {
 
 .button:nth-child(15) {
     transform: rotate(-5deg);
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    border: 5px dashed #48cae4;
+    border-radius: 20px;
+    padding: 10px 100px;
+    margin-bottom: 20px;
+}
+
+.message {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Gloria Hallelujah;
+    font-size: larger;
+    color: #caf0f8;
 }
